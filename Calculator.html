@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project : Calculator</title>
+    <style>
+        *{margin: 0;
+        padding: 0;
+        background-color: #202024;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10%;
+        left: 35%;
+        /* border: linear-gradient(162deg, rgba(182,45,233,1) 18%, rgba(16,92,156,1) 100%, rgba(0,254,255,0.8802871490393032) 100%) solid 2px; */
+        /* box-shadow: inset 5px 10px 20px 5px; */
+        border-radius: 12px;
+        /* border-top-width: 1; */
+        /* padding: 9rem; */
+        height: 60%;
+        width: 30%;
+        background-color: #39393B;
+        border-radius: 50px;
+        /* background-color: #105C9C; */
+        /* background: rgb(182,45,233); */
+/* background: linear-gradient(162deg, rgba(182,45,233,1) 18%, rgba(16,92,156,1) 100%, rgba(0,254,255,0.8802871490393032) 100%); */
+    }
+
+    .main .inp{
+        /* padding: 10px 0px; */
+        /* width: 100%; */
+        display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    }
+
+    .main .inp input{
+     border: none;
+     /* width: 70%; */
+     padding: 20px;
+     border-radius: 15px;
+     background-color: #A2AF77;
+     position: absolute;
+    top: 30px;
+    text-align:end;
+    font-size: 1.5rem;
+    height: 10%;
+    color: #fff;
+    }
+
+    .mainbtn{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        width: 70%;
+        gap: 10px;
+        align-self: center;
+        /* padding-top: 36%; */
+        background-color: #39393B;
+        position: absolute;
+        top: 35%;
+        
+    }
+
+    .mainbtn button{
+        cursor: pointer;
+        padding: 14px;
+        border-radius: 10px;
+        /* position: relative; */
+        /* bottom: 0px; */
+        /* padding-top: 10px; */
+        font-size: 25px;
+        background-color: #58595B;
+        border: none;
+        align-self: center;
+        transition: transform 3s;
+        color: #fff;
+        
+    }
+/* 
+    .mainbtn button:{
+        
+    } */
+
+    #equal{
+        background-color: #F99003;
+    }
+
+    .owner{
+        display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 44%;
+    top: 73%;
+    color: #9797f1;                        
+    }
+
+    #sp{
+        position: absolute;
+        top: 28%;
+        left: 17%;
+        background-color: transparent;
+        color: #202024;
+        text-decoration: none;
+    }
+
+
+
+    </style>
+</head>
+<body onload="onLoad()">
+
+    <h2 onclick="mode()" id="modeId">Dark mode</h2>
+
+    <h3 id="inputName"></h3>
+
+    <div class="main">
+        <div class="inp">
+    <input id="cal" type="text" placeholder="0" onkeypress="return(event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+    <a href="https://www.spava.in" id="sp">Spava</a>
+    
+</div>
+
+   <div class="mainbtn">
+
+    <button class="btn">7</button>
+    <button class="btn">8</button>
+    <button class="btn">9</button>
+    <button class="btn" id="equal">*</button>
+    <button class="btn">4</button>
+    <button class="btn">5</button>
+    <button class="btn">6</button>
+    <button class="btn" id="equal">-</button>
+    <button class="btn">1</button>
+    <button class="btn">2</button>
+    <button class="btn">3</button>
+    <button class="btn" id="equal">+</button>
+    <button class="btn" id="equal">C</button>
+    <button class="btn">0</button>
+    <button class="btn" id="equal">/</button>
+    <button class="btn" id="equal">=</button>
+</div>  
+
+</div>
+<div class="owner"><h3> 𝐌𝐚𝐝𝐞 𝐰𝐢𝐭𝐡 🤍 <a href="https://github.com/Akshayffb" style="text-decoration: none; color: #9797f1;"> 𝐀𝐤𝐬𝐡𝐚𝐲</a></h3>
+</div>
+
+
+
+
+<script src="Calculatorjs.js"></script>
+</body>
+</html>
