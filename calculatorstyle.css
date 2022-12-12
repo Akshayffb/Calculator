@@ -61,8 +61,11 @@
         align-self: center;
         transition: transform 3s;
         color: #fff;
-        
     }
+
+        .mainbtn button:hover{
+                background-color: #202024;
+                }
 
     #equal{
         width: 468%;
