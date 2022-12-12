@@ -1,6 +1,56 @@
  
  // for taking input name
  
+ 
+function mode(){
+    var toggleb = document.getElementById("modeId");
+    var bodyElt = document.querySelector("body");
+    bodyElt.classList.toggle("light");
+
+
+    if(bodyElt.classList.toggle("light")){
+        toggleb.innerHTML ="mode";
+        // bodyElt.style.backgroundColor = "#fff";
+        // bodyElt.style.color = "#000";
+        bodyElt.style.cssText = "background-color: #000; color: #fff; height: 760px;"
+
+        
+    }
+    else{
+        toggleb.innerHTML = "";
+        bodyElt.style.cssText = "background-color: #fff; color: #000;"
+        
+    }  
+}
+
+var val =document.getElementById("cal")
+var calc = document.getElementsByClassName("btn");
+    for(let i=0; i<calc.length; i++){
+        calc[i].addEventListener("click", function (){
+            val.value+=calc[i].innerHTML
+        })
+    }
+
+    var eql = document.getElementById("equal")
+        eql.addEventListener("click", function(){
+            
+        val.value= eval(val.value);
+        })
+
+
+        var emt= document.getElementById("c")
+            emt.addEventListener("click", function (){
+                val.value = "";
+            })
+
+            var ceb =document.getElementById("ce")
+                ceb.addEventListener("click", ()=>{
+                    val.value = val.value.slice(0, -1)
+                })
+
+
+
+
  var fname;
  var b =document.getElementById("inputName");
 
@@ -38,26 +88,6 @@ var modeing = document.getElementById("modeId");
 
 
 
-function mode(){
-    var toggleb = document.getElementById("modeId");
-    var bodyElt = document.querySelector("body");
-    bodyElt.classList.toggle("dark");
-
-
-    if(bodyElt.classList.toggle("dark")){
-        toggleb.innerHTML ="mode";
-        // bodyElt.style.backgroundColor = "#fff";
-        // bodyElt.style.color = "#000";
-        bodyElt.style.cssText = "background-color: #000; color: #fff; height: 760px;"
-
-        
-    }
-    else{
-        toggleb.innerHTML = "Light Mode";
-        bodyElt.style.cssText = "background-color: #fff; color: #000; height: 760px;"
-    }
-
-}
 
 
 // function mode(){
@@ -79,5 +109,8 @@ function mode(){
 //             bodyElement.style.color = "#fff"
 //         }
 // }
+
+
+
 
 
