@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project : Calculator</title>
-    <link rel="stylesheet" href="calculatorcss.css">
+    <link rel="stylesheet" href="Calculatorcss.css">
 </head>
 <body onload="onLoad()">
 
-    <h2 onclick="mode()" id="modeId">Dark mode</h2>
+    <h2 onclick="mode()" id="modeId">Light mode</h2>
 
     <h3 id="inputName"></h3>
 
     <div class="main">
         <div class="inp">
-    <input id="cal" type="text" placeholder="0" onkeypress="return(event.charCode !=8 && event.charCode ==0 || (event.charCode >= 37 && event.charCode <= 61 ))">
+    <input id="cal" type="text" disabled placeholder="0" onkeypress="return(event.charCode !=8 && event.charCode ==0 || (event.charCode >= 37 && event.charCode <= 61 ))">
     <a href="https://www.spava.in" id="sp">Spava</a>
     
 </div>
@@ -34,10 +34,11 @@
     <button class="btn">2</button>
     <button class="btn">3</button>
     <button class="btn" id="plus" style="background-color: #F99003;">+</button>
-    <button class="btn" id="c"style="background-color: #F99003;">C</button>
+    <button id="c"style="background-color: #F99003;">C</button>
     <button class="btn">0</button>
+    <button id="ce" style="background-color: #F99003;">CE</button>
     <button class="btn" id="per" style="background-color: #F99003;">%</button>
-    <button class="btn" id="equal" style="background-color: #F99003;">=</button>
+    <button id="equal" style="background-color: #F99003;">=</button>
 </div>  
 
 </div>
