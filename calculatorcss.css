@@ -13,7 +13,7 @@
         top: 10%;
         left: 35%;
         border-radius: 12px;
-        height: 60%;
+        height: 70%;
         width: 30%;
         background-color: #39393B;
         border-radius: 50px;
@@ -64,13 +64,17 @@
         
     }
 
+    #equal{
+        width: 468%;
+    }
+
 
     .owner{
         display: flex;
         justify-content: center;
         position: absolute;
         left: 44%;
-        top: 73%;
+        top: 82%;
         color: #9797f1;                        
     }
 
