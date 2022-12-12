@@ -73,43 +73,11 @@ var calc = document.getElementsByClassName("btn");
 
 //end
 
-// document.getElementsByClassName("btn").addEventListener("click", inputData);
-
-// function inputData(){
-//     document.getElementById("cal").vaule = document.getElementsByClassName("btn").vaule;
-// }
-
-
 
 //  dark/light mode
 
 var modeing = document.getElementById("modeId");
     modeing.style.cssText = "text-align: center;"
-
-
-
-
-
-// function mode(){
-//     let toggleBtn = document.getElementById("modeId");
-//     let bodyElement = document.querySelector("body")
-//         bodyElement.classList.toggle("dark");
-
-//         if(bodyElement.classList.contains("dark")){
-//             toggleBtn.innerText = "❤️"
-//             bodyElement.style.backgroundColor = "#fff"
-//             bodyElement.style.color = "#000"
-
-//             bodyElement.style.innerText = "I Love You"
-            
-//         }
-//         else {
-//             toggleBtn.innerText = "⚫"
-//             bodyElement.style.backgroundColor = "#000"
-//             bodyElement.style.color = "#fff"
-//         }
-// }
-
 
 
 
